@@ -1,0 +1,15 @@
+<form (ngSubmit)="submit()" [formGroup]="taskTypeForm" #formDir="ngForm">
+    <div class="form-group">
+        <label for="name">Descrição</label>
+        <input type="text" placeholder="Coloque o nome do tipo de tarefa" formControlName="name" required/>
+        <div *ngIf="name.invalid && formDir.submitted" class="validation-error">
+            <p>Descrição é obrigatório</p> 
+        </div>  
+
+    
+    </div>
+
+    <input type="submit" [disabled]="!name.valid"  value="{{btnText}}"/>
+
+
+</form>

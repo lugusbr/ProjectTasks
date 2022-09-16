@@ -1,0 +1,57 @@
+<form (ngSubmit)="submit()" [formGroup]="taskForm" #formDir="ngForm">
+  <div class="form-group">
+    <label for="name" class="form-label">Descrição</label>
+    <input
+      class="form-control"
+      type="text"
+      placeholder="Coloque o nome da tarefa"
+      formControlName="name"
+      required
+    />
+  </div>
+  <div class="mb-3">
+    <label for="taskTypeId" class="form-label">Tipo tarefa</label>
+    <select formControlName="taskTypeId" class="form-control"  required >
+      <option  *ngFor="let c of taskTypes" [ngValue]="c.id">
+        {{ c.name }}
+      </option>
+    </select>
+  </div>
+
+  <!-- <div class="form-group">
+    <div class="container">
+      <div class="row" *ngFor="let taskTime of task?.taskTimes">
+        Data/Hora inicial: {{ taskTime.startDateTime | date:'short' }} - Data/Hora final:
+        {{ taskTime.endDateTime | date:'short'  }}
+      </div>
+  </div>
+  </div> -->
+
+
+  <div formArrayName="taskTimes">
+    <div *ngFor="let t of taskTimes.controls; let i=index">
+      <div [formGroupName]="i">
+        {{i}}
+        Inicio :
+        <input type="datetime-local"  formControlName="startDateTime">
+        Final:
+        <input type="datetime-local" formControlName="endDateTime">
+ 
+        <button (click)="removeTaskTime(i)">Remove</button>
+      </div>
+    </div>
+  </div>
+
+  <p>
+    <button type="button" (click)="addTaskTimes()">Add</button>
+  </p>
+
+  <div *ngIf="name.invalid && formDir.submitted" class="validation-error">
+    <p>Descrição é obrigatório</p>
+  </div>
+   <div *ngIf="taskTypeId.invalid && formDir.submitted" class="validation-error">
+    <p>Tipo tarefa é obrigatório</p>
+  </div> 
+
+  <input type="submit" class="btn btn-primary mb-3" value="Salvar" />
+</form>

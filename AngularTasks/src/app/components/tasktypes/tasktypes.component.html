@@ -1,0 +1,9 @@
+><h1>Tipos de tarefas</h1>
+<ul>
+    <li *ngFor="let taskType of taskTypes">
+        {{taskType.name}}
+        <button routerLink="/tipostarefa/editar/{{ taskType.id }}">Editar</button>
+        <button  (click)="removeHandler(taskType.id!)">Excluir</button>
+    </li>
+</ul>
+<button routerLink="/tipostarefa/novo">Incluir</button>

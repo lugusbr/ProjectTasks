@@ -1,0 +1,9 @@
+><h1>Tarefas</h1>
+<button routerLink="/tarefas/novo">Incluir</button>
+<ul>
+    <li *ngFor="let task of tasks">
+        {{task.name}}
+        <button routerLink="/tarefas/editar/{{ task.id }}">Editar</button>
+        <button  (click)="removeHandler(task.id!)">Excluir</button>
+    </li>
+</ul>
