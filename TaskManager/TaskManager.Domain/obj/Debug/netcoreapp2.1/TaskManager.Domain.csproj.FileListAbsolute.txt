@@ -1,0 +1,9 @@
+C:\src\TaskManager\TaskManager\TaskManager.Domain\bin\Debug\netcoreapp2.1\TaskManager.Domain.deps.json
+C:\src\TaskManager\TaskManager\TaskManager.Domain\bin\Debug\netcoreapp2.1\TaskManager.Domain.dll
+C:\src\TaskManager\TaskManager\TaskManager.Domain\obj\Debug\netcoreapp2.1\TaskManager.Domain.csproj.CoreCompileInputs.cache
+C:\src\TaskManager\TaskManager\TaskManager.Domain\obj\Debug\netcoreapp2.1\TaskManager.Domain.AssemblyInfoInputs.cache
+C:\src\TaskManager\TaskManager\TaskManager.Domain\obj\Debug\netcoreapp2.1\TaskManager.Domain.AssemblyInfo.cs
+C:\src\TaskManager\TaskManager\TaskManager.Domain\bin\Debug\netcoreapp2.1\TaskManager.Domain.pdb
+C:\src\TaskManager\TaskManager\TaskManager.Domain\obj\Debug\netcoreapp2.1\TaskManager.Domain.csprojAssemblyReference.cache
+C:\src\TaskManager\TaskManager\TaskManager.Domain\obj\Debug\netcoreapp2.1\TaskManager.Domain.dll
+C:\src\TaskManager\TaskManager\TaskManager.Domain\obj\Debug\netcoreapp2.1\TaskManager.Domain.pdb

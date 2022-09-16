@@ -1,0 +1,29 @@
+version: '3.0'
+
+services:
+  mysql-server:
+    image: mysql:5.7
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: 1
+      MYSQL_DATABASE: projecttasks
+      MYSQL_USER: dbuser
+      MYSQL_PASSWORD: 1234
+    volumes:
+      - ./dbdata:/var/lib/mysql:rw
+      - ./DBscript/:/docker-entrypoint-initdb.d:ro
+    ports:
+      - "3306:3306"     
+
+  taskmanagerapi:
+    depends_on:
+      - mysql-server
+    image: taskmanagerapi
+    build: ./TaskManager/TaskManager.Api
+    ports:
+      - "5000:80"
+#  web:
+#    build:
+#        context: ./AngularTasks
+#        dockerfile: Dockerfile
+#    ports: 
+#        - "9000:80"

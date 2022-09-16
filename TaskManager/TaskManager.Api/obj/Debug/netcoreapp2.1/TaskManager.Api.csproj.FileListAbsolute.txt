@@ -1,0 +1,6 @@
+C:\src\TaskManager\TaskManager\TaskManager.Api\obj\Debug\netcoreapp2.1\TaskManager.Api.csprojAssemblyReference.cache
+C:\src\TaskManager\TaskManager\TaskManager.Api\obj\Debug\netcoreapp2.1\TaskManager.Api.AssemblyInfoInputs.cache
+C:\src\TaskManager\TaskManager\TaskManager.Api\obj\Debug\netcoreapp2.1\TaskManager.Api.AssemblyInfo.cs
+C:\src\TaskManager\TaskManager\TaskManager.Api\obj\Debug\netcoreapp2.1\TaskManager.Api.csproj.CoreCompileInputs.cache
+C:\src\TaskManager\TaskManager\TaskManager.Api\obj\Debug\netcoreapp2.1\TaskManager.Api.RazorAssemblyInfo.cache
+C:\src\TaskManager\TaskManager\TaskManager.Api\obj\Debug\netcoreapp2.1\TaskManager.Api.RazorAssemblyInfo.cs
